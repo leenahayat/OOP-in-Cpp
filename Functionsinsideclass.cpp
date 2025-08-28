@@ -17,6 +17,10 @@ class Cricketer{
     {
      cout << this->name << "   " << this->runs << "  " << this->avg << endl;
     }
+
+    int matches(){
+        return runs/avg;
+    }
 };
 
 int main(){ 
@@ -25,4 +29,7 @@ int main(){
   cout << "Player" << "   " << "Runs" << "  " << "Average" << endl;
   c1.print(5); //calling function
   c2.print(3);
+  cout<<endl<<endl<<"Total matches played by each Player"<<endl;
+  cout<<c1.name<<"    "<<c1.matches()<<endl;
+  cout<<c2.name<<"    "<<c2.matches()<<endl;
 }
