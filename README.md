@@ -29,9 +29,6 @@ It is responsible for **initializing the new object**.
    - Creates a new object as a **copy of an existing object**.  
    - The compiler provides a default shallow copy constructor, but a user-defined one may be needed for classes that handle **dynamic memory**.  
 
-4. **Move Constructor (C++11 and later)**  
-   - Transfers ownership of resources from a temporary object instead of copying, improving efficiency.  
-
 ### Constructor Overloading
 - You can define **multiple constructors** with different parameter lists.  
 - This allows flexible ways of creating and initializing objects.  
@@ -45,7 +42,7 @@ It is responsible for **initializing the new object**.
 
 ---
 
-## 📋 Copy Constructor & Rule of Three / Five
+## 📋 Copy Constructor & Rule of Three
 
 ### Copy Constructor Recap
 - Used to make a **new object** by copying the state of an existing one.  
@@ -58,11 +55,6 @@ If a class defines one of the following, it should generally define all three:
 3. Destructor  
 
 This ensures safe and consistent **resource management**.  
-
-### Rule of Five (C++11+)
-With move semantics, the rule extends to five, including:  
-- Move Constructor  
-- Move Assignment Operator  
 
 ---
 
@@ -111,21 +103,21 @@ This promotes **code reuse** and models real-world “is-a” relationships.
 
 ### Dynamic Memory & Resource Management
 - Objects that allocate resources (`new`, file handles, sockets) must release them properly (`delete`, `close`).  
-- Resource-managing classes should follow the **Rule of Three/Five** to prevent memory leaks and double frees.  
+- Resource-managing classes should follow the **Rule of Three** to prevent memory leaks and double frees.  
 
 ### Custom Data Structures
 - Building custom containers (like a vector) illustrates how to handle:  
   - Internal capacity  
   - Resizing  
   - Safe indexing  
-  - Correct use of constructors, destructors, and copy/move semantics  
+  - Correct use of constructors, destructors, and copy semantics  
 
 ---
 
 ## ✅ Summary
 This repository covers the core OOP principles in C++:
-- Constructors (Default, Parameterized, Copy, Move, Overloaded)  
-- Copy Constructor, Rule of Three / Five  
+- Constructors (Default, Parameterized, Copy, Overloaded)  
+- Copy Constructor, Rule of Three  
 - Access Modifiers (Encapsulation)  
 - Inheritance (types, modes, problems, solutions)  
 - Other essentials (`this`, dynamic memory, custom data structures)  
