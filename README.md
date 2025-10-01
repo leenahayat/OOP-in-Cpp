@@ -143,13 +143,5 @@ Together, these form the **four pillars of OOP** in C++:
 
 ---
 
-## 📌 Tips for Further Improvement
-
-- Add **UML class diagrams** to visualize relationships.  
-- Include **comments in code files** linking theory to implementation.  
-- Add **tests or example usage** for each concept.  
-- Expand into **virtual destructors, abstract classes, interfaces**.  
-
----
 
 🚀 Happy Learning & Coding in C++ OOP!  
